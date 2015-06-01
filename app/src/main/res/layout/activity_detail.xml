@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlt_detail_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="android.mobile.datacvg.semp.TreeDetail.DetailActivity">
+
+    <ListView
+        android:id="@+id/list_report_summary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/rlt_description_content"
+        android:layout_below="@+id/list_report_summary"
+        android:layout_width="match_parent"
+        android:layout_height="64dp">
+
+        <ImageView
+            android:id="@+id/icon_description"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:src="@mipmap/tree_detail_description"/>
+
+        <TextView
+            android:layout_toRightOf="@+id/icon_description"
+            android:layout_toEndOf="@+id/icon_description"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:gravity="center_vertical"
+            android:id="@+id/txv_detail_description"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Semp</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="this_month">本月</string>
+    <string name="for_sure">确定</string>
+    <string name="for_cancel">取消</string>
+
+    <!-- month name. -->
+    <string name="January">1月</string>
+    <string name="February">2月</string>
+    <string name="March">3月</string>
+    <string name="April">4月</string>
+    <string name="May">5月</string>
+    <string name="June">6月</string>
+    <string name="July">7月</string>
+    <string name="August">8月</string>
+    <string name="September">9月</string>
+    <string name="October">10月</string>
+    <string name="November">11月</string>
+    <string name="December">12月</string>
+    <string name="title_activity_detail">DetailActivity</string>
+
+    <!-- button string -->
+    <string name="change_user">切换用户</string>
+    <string name="quit">退出</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="login_in">LOGIN IN</string>
+
+    <!-- input hint -->
+    <string name="default_hint">此处输入用户名</string>
+
+    <!--image description-->
+    <string name="desc_login_bg1">the logo at the right side</string>
+    <string name="desc_login_logo">the logo right above the edit bar</string>
+</resources>

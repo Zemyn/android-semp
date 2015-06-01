@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/rlt_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@android:color/black">
+
+        <ImageButton
+            android:id="@+id/btn_menu_drawer"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/page_setting"
+            android:onClick="menuDrawerToggle"
+            android:background="@android:color/transparent"
+            android:layout_margin="3dp"
+            android:padding="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:id="@+id/btn_drawer_layout"
+            android:layout_alignParentRight="true"
+            android:layout_width="164dp"
+            android:onClick="dataPickerToggle"
+            android:layout_centerVertical="true"
+            android:background="@drawable/shape_round_bound_bg"
+            android:layout_height="32dp" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/main_recycle_list"
+        android:layout_below="@+id/rlt_top_bar"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

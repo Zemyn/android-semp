@@ -1,0 +1,29 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. Theme.AppCompat.Light.DarkActionBar -->
+    </style>
+    
+    <style name="month_button">
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:background">@drawable/shape_blue_round_bound_btn_bg</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="login_edt">
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/shape_round_bound_edit_bg</item>
+    </style>
+
+</resources>

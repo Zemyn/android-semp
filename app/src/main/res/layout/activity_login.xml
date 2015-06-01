@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_grey"
+    tools:context="android.mobile.datacvg.semp.Login.LoginActivity">
+
+    <ImageView
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/login_bg1"
+        android:contentDescription="@string/desc_login_bg1"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="70dp"
+        android:src="@mipmap/login_bg2"
+        android:contentDescription="@string/desc_login_bg1"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="-15dp"
+        android:layout_marginStart="-15dp"
+        android:src="@mipmap/login_bg3"
+        android:contentDescription="@string/desc_login_bg1"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <ImageView
+            android:id="@+id/imv_semp_icon"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/desc_login_logo"/>
+
+        <EditText
+            android:layout_below="@+id/imv_semp_icon"
+            android:id="@+id/edt_user_id"
+            android:inputType="text"
+            android:drawableLeft="@mipmap/input_user"
+            style="@style/login_edt"/>
+
+        <EditText
+            android:id="@+id/edt_user_pw"
+            android:inputType="numberPassword"
+            android:layout_below="@+id/edt_user_id"
+            android:drawableLeft="@mipmap/input_psw"
+            style="@style/login_edt" />
+
+        <Button
+            android:layout_below="@+id/edt_user_pw"
+            android:text="@string/login_in"
+            android:layout_width="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="60dp"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:background="@drawable/shape_round_bound_login_bg"
+            android:layout_height="48dp" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

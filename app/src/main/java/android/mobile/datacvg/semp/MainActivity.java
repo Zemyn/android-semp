@@ -21,7 +21,9 @@ import android.widget.TextView;
 
 import net.simonvt.menudrawer.MenuDrawer;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 
@@ -54,10 +56,16 @@ public class MainActivity extends Activity {
         left_side_menu_drawer.setContentView(R.layout.activity_main);//the content at the right side of the menu
         left_side_menu_drawer.setMenuView(R.layout.left_side_drawer_menu);
 
+        Date curDate = new Date(System.currentTimeMillis());
+
         TextView tex_date = (TextView)findViewById(R.id.tex_date);
-        SpannableString ss = new SpannableString("2 0 1 5 / 0 6");
-        ss.setSpan(new ForegroundColorSpan(Color.BLUE),8,13, Spanned.SPAN_EXCLUSIVE_INCLUSIVE);
-        tex_date.setText(ss);
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy / MM");
+
+        String strDate = dateFormat.format(curDate);
+
+        //SpannableString ss = new SpannableString(strDate);
+        //ss.setSpan(new ForegroundColorSpan(Color.BLUE),5,9, Spanned.SPAN_EXCLUSIVE_INCLUSIVE);
+        tex_date.setText(strDate);
 
         //the subviews of the menu layout
         mUserImg = (RoundImageView)findViewById(R.id.img_user);

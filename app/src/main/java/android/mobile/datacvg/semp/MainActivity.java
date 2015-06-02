@@ -2,6 +2,7 @@ package android.mobile.datacvg.semp;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
 import android.mobile.datacvg.semp.Login.LoginActivity;
 import android.mobile.datacvg.semp.MainList.DatePickerView;
 import android.mobile.datacvg.semp.MainList.IndexListAdapter;
@@ -10,6 +11,9 @@ import android.mobile.datacvg.semp.Widget.RoundImageView;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.SpannableString;
+import android.text.Spanned;
+import android.text.style.ForegroundColorSpan;
 import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.ImageView;
@@ -49,6 +53,11 @@ public class MainActivity extends Activity {
         left_side_menu_drawer.setMenuSize(width * 2 / 3);// set the width of the Menu size
         left_side_menu_drawer.setContentView(R.layout.activity_main);//the content at the right side of the menu
         left_side_menu_drawer.setMenuView(R.layout.left_side_drawer_menu);
+
+        TextView tex_date = (TextView)findViewById(R.id.tex_date);
+        SpannableString ss = new SpannableString("2 0 1 5 / 0 6");
+        ss.setSpan(new ForegroundColorSpan(Color.BLUE),8,13, Spanned.SPAN_EXCLUSIVE_INCLUSIVE);
+        tex_date.setText(ss);
 
         //the subviews of the menu layout
         mUserImg = (RoundImageView)findViewById(R.id.img_user);
